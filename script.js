@@ -25,22 +25,17 @@ function getHumanChoice() {
 }
 
 //Declare players score variables
-
 let humanScore = 0
 let computerScore = 0
-
-// Play single round
-
 
 
 
 //Play the entire game 
-
 function playGame() {
-    
+  
+    // Play single round
     function playRound(humanChoice, computerChoice) {
     
-
         if (humanChoice === "paper" && computerChoice === "rock") {
             humanScore = humanScore + 1
             console.log("Human score: " + humanScore)
@@ -85,6 +80,7 @@ function playGame() {
     
     }
 
+    // Play 5 rounds
     let keepGoing = true;
     let round = 0;
 
@@ -112,5 +108,5 @@ function playGame() {
 }
 
 
-
+// Launch game
 console.log(playGame())
