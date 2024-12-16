@@ -13,12 +13,10 @@ function getComputerChoice() {
 // Get user's input
 function getHumanChoice() {
     let humanChoice = prompt("Rock, paper, scissors?").toLowerCase()
-    let keepGoing = true;
     
-    while (keepGoing)
+    while (true)
         if (humanChoice === "rock" || humanChoice === "paper" || humanChoice === "scissors") {
             return humanChoice;
-            keepGoing = false;
         } else {
             humanChoice = prompt("Incorrect choice. Try again: rock, paper, scissors?")
     }
@@ -84,7 +82,7 @@ function playGame() {
     let keepGoing = true;
     let round = 0;
 
-    while (keepGoing) { 
+    while (true) { 
 
         round = round + 1;
         console.log("Round " + round);
@@ -95,13 +93,13 @@ function playGame() {
 
         if (round === 5 && humanScore > computerScore) {
             return "END OF GAME: Congrats, you beat the machine!"
-            keepGoing = false;
+    
         } else if (round === 5 && humanScore < computerScore) {
             return "END OF GAME: The machine beat you, loser!"
-            keepGoing = false;
+            
         } else if (round === 5 && humanScore == computerScore) {
             return "END OF GAME: It's a tie. Losers!"
-            keepGoing = false;
+            
         }
 
     }
