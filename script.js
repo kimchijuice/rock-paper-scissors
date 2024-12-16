@@ -98,13 +98,13 @@ function playGame() {
         
 
         if (round === 5 && humanScore > computerScore) {
-            return "Congrats, you beat the machine!"
+            return "END OF GAME: Congrats, you beat the machine!"
             keepGoing = false;
         } else if (round === 5 && humanScore < computerScore) {
-            return "The machine beat you, loser!"
+            return "END OF GAME: The machine beat you, loser!"
             keepGoing = false;
         } else if (round === 5 && humanScore == computerScore) {
-            return "It's a tie. Losers!"
+            return "END OF GAME: It's a tie. Losers!"
             keepGoing = false;
         }
 
