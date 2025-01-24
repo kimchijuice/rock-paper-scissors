@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box; 
+    font-family: "Comic Neue", serif; 
+  }
+
+.header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+h1 {
+  color: teal;
+}
+
+h2 {
+  color: pink;
+}
+
+h3 {
+  color: indigo;
+}
+
+#scores, #result-message, #final-message {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.choice {
+  margin: 30px;
+  margin-top: 0;
+  background-color: white;
+  border-color: yellowgreen;
+}
+
+.choiceImg {
+  height: 50px;
+}
+
+.resultImg {
+  height: 300px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(202, 101, 227);
+}
+
+#yes {
+  background-color: rgb(11, 196, 141);
+  color: white;
+}
+
+#no {
+  background-color: lightcoral;
+  color: white;
+}

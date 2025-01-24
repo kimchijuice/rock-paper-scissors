@@ -3,11 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
     <title>Rock, paper, scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <div class="header">
+        <h1>Let's play <span id="roundNumber">5</span> rounds of rock, paper, scissors!</h1>
+        <h3>To start, choose your move:</h3>
+    </div>
+
+    <div class="button-container">
+        <button class="choice" id="rock"><img class="choiceImg" src="./img/rock.png" alt="rock"></button>
+        <button class="choice" id="paper"><img class="choiceImg" src="./img/paper.png" alt="rock"></button>
+        <button class="choice" id="scissors"><img class="choiceImg" src="./img/scissors.png" alt="rock"></button>
+    </div>
+    
+    <div id="results">
+        <div id="scores">
+            <div class="computerScoreBoard">
+                <h2>Me: <span id="computerScore">0</span></h2>
+            </div>
+            <div id="humanScoreBoard">
+                <h2>You: <span id="humanScore">0</span></h2>
+            </div>
+        </div>
+        <div id="result-message">
+            <div id="computerResult"></div>
+            <div id="humanResult"></div>
+        </div>
+    </div>
     
     <script src="script.js"></script>
+
+
 
 </body>
 </html>
