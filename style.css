@@ -32,14 +32,26 @@ h3 {
   display: flex;
   justify-content: center;
   text-align: center;
+  flex-wrap: wrap;
+  gap: 15px;
 
 }
 
 .choice {
-  margin: 30px;
+  margin: 10px;
   margin-top: 0;
   background-color: white;
   border-color: yellowgreen;
+  transition: all 0.2s;
+}
+
+.choice:hover {
+  transform: scale(1.1);
+  border-width: 4px;
+}
+
+.choice:active {
+  transform: scale(0.95);
 }
 
 .choiceImg {
@@ -47,7 +59,9 @@ h3 {
 }
 
 .resultImg {
-  height: 300px;
+  height: auto;
+  max-width: 100%;
+  max-height: 300px;
 }
 
 .modal-overlay {
@@ -80,3 +94,42 @@ h3 {
   background-color: lightcoral;
   color: white;
 }
+
+/* Add to existing CSS */
+body {
+  margin: 0;
+  padding: 15px;
+}
+
+@media (max-width: 600px) {
+  .choice {
+      margin: 5px;
+  }
+  
+  .choiceImg {
+      height: 40px;
+  }
+  
+  #scores {
+      flex-direction: row;
+      justify-content: space-around;
+  }
+  
+  #result-message {
+      flex-direction: row;
+      justify-content: space-around;
+  }
+
+  .resultImg {
+      max-height: 150px;
+  }
+
+  h1 {
+      font-size: 1.5rem;
+  }
+
+  h2 {
+      font-size: 1.2rem;
+  }
+}
+
